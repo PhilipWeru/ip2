@@ -1,64 +1,239 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>ANITA'S FOODS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105089212-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+      <title>Menu</title>
   </head>
-
- <body>
-
-   <div class="logo">
-       <img src="assets/logoBig.png">
-       <p> We Provide The Best Food </p>
-         <p>At The <strong>Right Price</strong></p>
-    </div>
+  <body>
     <div class="container">
-
-     <div class="row">
-        <div class="col-md-3">  <div class="row">Happy Hour </div> <div class="row"> Party Time</div>
+      <div class="row">
+        <div class="landing">
+          <div class="nav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="assets/nav.png" alt="nav"></span>
+          </div>
+          <div id="myNav" class="overlay">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#menu">Menu</a>
+              <a href="#events">Events</a>
+              <a href="#contacts">Contacts</a>
+            </div>
+          </div>
+          <img class="logo" src="assets/logoBig.png" alt="logo">
+          <p>We Provide The Best Food </p>
+          <p>At The <strong>Right Price</strong></p>
         </div>
-        <div class="col-md-3">  <img src="assets/foodtop/breakfast.jpg"> <a></a></div>
-        <div class="col-md-3">  <img src="assets/foodtop/lunch.jpg"> <a></a> </div>
-        <div class="col-md-3">  <img src="assets/foodtop/dinner2.jpg"> <a></a></div>
       </div>
-      <div class="row">
-       <div class="image1"><img src="assets/fastFood1.jpg"> </div>
-       <div class="fasttext">
-       <p><h1>Fast Food</h1></p>
-       <P><strong>You'll love our delicious fast food</strong></p>
-        <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-          ed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit"</p>
 
-   <button type="button" class="btn btn-outline-primary">VIEW GALLERY</button>
-  </div>
-      </div>
-      <div class="row">
-         <div class="image2"><img src="assets/drink2.jpg"> </div>
-
-       <h2><strong>Drinks</strong></h2>
-        <p><strong> We also Produce delicious drinks </strong></p>
-
-       <div class="test-box">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      <a name="events"><div class="row" id="event"></a>
+        <div class="col-md-3">
+          <h2 class="happy-hour">Happy Hour</p>
+          <h2 class="party-time">Party Time</p>
         </div>
-  <button type="button" class="btn btn-outline-primary">VIEW GALLERY</button>
-      </div>
-      <div class="row">
-        <div class="almost"> </div>
-      </div>
-      <div class="row">
-      </div>
-      <div class="row">
+        <div class="col-md-3">
+          <div class="breakfast">
+            <p>Breakfast</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="lunch">
+            <p>Lunch</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dinner">
+            <p>Dinner</p>
+          </div>
+        </div>
       </div>
 
-   </div>
+  <!--this is the fast food row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <img class="img-responsive" src="assets/fastFood1.jpg" alt="fastfood1">
+            <img class="img-responsive" src="assets/fastFood2.jpg" alt="fastfood2">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="fast-food-text">
+            <h3>Fast Food</h3>
+            <h4>You'll love our delicious fast food</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <button type="button" class="btn btn-default">VIEW GALLERY<span>&#8594;</span></button>
+          </div>
+        </div>
+      </div>
 
- </body>
+  <!--this is the drinks row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="drinks-text">
+            <h3>Drinks</h3>
+            <h4>We also produce delicious drinks</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <button type="button" class="btn btn-default">VIEW GALLERY <span>&#8594;</span></button>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <div class="drinks-img">
+            <div class="well">
+              <img src="assets/drink1.jpg" alt="drink1"><span><img src="assets/drink2.jpg" alt="drink2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--this is the menu row-->
+
+      <div class="row">
+        <a name="menu"><div class="menu"></a>
+          <div class="well">
+          <ul class="nav nav-tabs nav-justified" role="tab-list">
+            <li class="col-md-3 active"><a data-toggle="tab" href="#fastfood">Fast Food</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#drinks">Drinks</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#chicken">Chicken</a></li>
+            <li class="col-md-3"><a data-toggle="tab" href="#rice">Rice</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="fastfood" class="tab-pane fade in active">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/chickenBurger.jpg" alt="chickenburger">
+                      <p>Chicken Burger</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/beefBurger.jpg" alt="beefBurger">
+                      <p>Beef Burger</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/chickenPizza.jpg" alt="chickenPizza">
+                      <p>Chicken Pizza</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="col-md-4">
+                      <img src="assets/fastfood/fries.jpg" alt="fries">
+                      <p>Fries</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></a>
+              </div>
+
+
+
+            </div>
+            <div id="drinks" class="tab-pane fade">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/lemonade.jpg" alt="lemonade">
+                      <p>Lemonade</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/Rose Spritzer.jpeg" alt="Rose Spritzer">
+                      <p>Rose Spritzer</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="assets/Drinks/Strawberry-Lime-Slush.jpg" alt="StrawberryLimeSlush">
+                      <p>Strawberry Lime Slush</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></a>
+              </div>
+
+            </div>
+            <div id="chicken" class="tab-pane fade">
+              <h3>chicken</h3>
+            </div>
+            <div id="rice" class="tab-pane fade">
+              <h3>rice</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!--this is the row for our happy customers and about menu-->
+      <div class="row">
+        <div class="happy-customers well">
+
+          <div class="row">
+          <div class="col-md-7">
+           <h4>Our Happy Customers</h3>
+            <p>George Richard</p>
+            <p>The menu is awesome, there foods are not only great but also in the right price. I'll highly recommend them :)</p>
+            <span class="glyphicon glyphicon-menu-left"></span><img src="assets/customers/p1.png" alt="p1">
+            <img src="assets/customers/p2.png" alt="p2">
+            <img src="assets/customers/p3.png" alt="p3"><span class="glyphicon glyphicon-menu-right"></span>
+          </div>
+          <div class="col-md-5">
+            <h4><strong>About Menu</strong></h4>
+            <p>We are menu a little team of 7 members</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+          </div>
+          </div>
+
+      </div>
+      </div>
+
+  <!--this contains the email subscription row-->
+      <div class="row">
+        <div class="subscription">
+        <p>Get our daily food items delivered to your email</p>
+        <div id="subscribe">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" id="email" required placeholder="Your email" class="form-control">
+            </div>
+              <button id="subscribe" class="btn btn-default" type="submit">Subscribe</button>
+          </form>
+            <h4 class="subdetails"></h4>
+        </div>
+        </div>
+      </div>
+
+  <!--this contains the contact info-->
+      <div class="row">
+        <a name="contacts"><div class="contact-bar"></a>
+          <img src="assets/footerlogos/logo_white.png" alt="logo"><span>MENU</span>
+          <h3>Thats What We Are</h3>
+          <img src="assets/footerlogos/facebook.png" alt="facebook">
+          <img src="assets/footerlogos/twitter.png" alt="twitter">
+          <img src="assets/footerlogos/pinterest.png" alt="pintrest">
+          <p>2016 Menu Restaurant</p>
+
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

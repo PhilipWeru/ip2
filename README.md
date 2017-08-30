@@ -1,12 +1,39 @@
-# Independent Project
 
-## Instructions
-  1) Please fork the Moringa School **mpft1-ip** repo to your own account.
+# Project Title
 
-  2) Clone **your forked repo** to your own machine.`
+ANITA's Kitchen
 
-  3) Fill in the form under the [IP submission](http://moringaprep-ft.herokuapp.com/#10.html) heading in the LMS
+## Project details
 
-  4) Complete the independent project.
-  
-  5) Push your commits up to your forked repo.
+This is a website about the offerings of Anita's Kitchen including drinks, burgers, pizzas offered for Breakfast, Lunch and Dinner
+
+### Prerequisites
+
+* Browser
+
+
+## Deployment
+
+ Site was deployed to philipweru.github.io/IP2
+
+## Requirements
+
+* atom
+* chrome developer tools
+
+## Contributing
+
+* Philip Weru
+* Moringa School
+
+## Authors
+
+* Philip Weru
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md] file for details .
+
+## Acknowledgments
+
+* Moringa School
